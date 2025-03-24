@@ -1,4 +1,4 @@
-const Cash = require('../models/CashModel');
+const CashModel = require(path.join(__dirname, '../models/CashModel'));
 exports.createCash = async (req, res) => {
     try {
         const cash = new Cash(req.body);
